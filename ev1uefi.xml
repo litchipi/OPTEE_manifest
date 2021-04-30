@@ -9,9 +9,7 @@
     <!-- OP-TEE gits -->
     <project path="optee_docs"          name="OP-TEE/optee_docs.git" />
 	<project path="optee_test"          name="OP-TEE/optee_test.git" />
-
-	<!-- Wait for version 3.13 -->
-	<project path="optee_os"            name="OP-TEE/optee_os" revision="0ae917ec14351993187bb8aa82c05c0180da3ee7" clone-depth="10" />
+	<project path="optee_os"            name="OP-TEE/optee_os" revision="3.13.0" clone-depth="10" />
 
     <!-- linaro-swg gits -->
     <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git" />
