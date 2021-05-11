@@ -9,7 +9,8 @@
     <!-- OP-TEE gits -->
     <project path="optee_docs"          name="OP-TEE/optee_docs.git" />
     <project path="optee_test"          name="OP-TEE/optee_test.git" />
-    <project path="optee_client"        name="OP-TEE/optee_client.git"    revision="3.13.0" clone-depth="5"/>
+                    <!-- 3.13.0 -->
+    <project path="optee_client"        name="OP-TEE/optee_client.git"    revision="7c9c423d00e96bf51debd5fe10fd70dce83be5cc" clone-depth="5"/>
 
     <!-- linaro-swg gits -->
     <project path="optee_benchmark"     name="linaro-swg/optee_benchmark.git" />
