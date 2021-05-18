@@ -9,8 +9,6 @@
     <!-- OP-TEE gits -->
     <project path="optee_docs"          name="OP-TEE/optee_docs.git" />
     <project path="optee_test"          name="OP-TEE/optee_test.git" />
-                    <!-- 3.13.0 -->
-    <project path="optee_client"        name="OP-TEE/optee_client.git"    revision="7c9c423d00e96bf51debd5fe10fd70dce83be5cc" clone-depth="5"/>
 
     <!-- linaro-swg gits -->
     <project path="optee_benchmark"     name="linaro-swg/optee_benchmark.git" />
@@ -25,10 +23,13 @@
     <project path="edk2"                name="litchipi/edk2"              revision="manifest/stmm-arm-32b" clone-depth="5" />
     <project path="edk2-platforms"      name="litchipi/edk2-platforms"    revision="manifest/stmm-arm-32b" clone-depth="5" />
 
-    <project path="optee_os"            name="litchipi/optee_os.git"      revision="manifest/secureuefi" clone-depth="10" />
-    <project path="u-boot"              name="litchipi/u-boot"            revision="manifest/secureuefi" clone-depth="20" />
+    <project path="u-boot"              name="litchipi/u-boot"            revision="manifest/secureuefi"  clone-depth="20" />
     <project path="build"               name="litchipi/OPTEE_build"       revision="manifest/secureuefi" clone-depth="10">
         <linkfile src="stm32mp1.mk"  dest="build/Makefile" />
     </project>
+
+    <!-- Waiting to be pulled in upstream -->
+    <project path="optee_client"    name="litchipi/optee_client"    revision="manifest/teesuppl_dbg" clone-depth="5" />
+    <project path="optee_os"        name="litchipi/optee_os.git"    revision="manifest/secureuefi" clone-depth="10" />
 
 </manifest>
