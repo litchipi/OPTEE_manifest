@@ -9,7 +9,7 @@
     <!-- OP-TEE gits -->
     <project path="optee_docs"         name="OP-TEE/optee_docs.git" />
     <project path="optee_test"         name="OP-TEE/optee_test.git"      revision="refs/tags/3.13.0"/>
-	<project path="optee_os"		   name="OP-TEE/optee_os.git"        revision="3.13.0" clone-depth="10"/>
+	<project path="optee_os"		   name="OP-TEE/optee_os.git"        revision="refs/tags/3.13.0" clone-depth="10"/>
 
     <!-- linaro-swg gits -->
     <project path="optee_benchmark"    name="linaro-swg/optee_benchmark.git" />
@@ -22,23 +22,15 @@
     <project path="buildroot"          name="buildroot/buildroot.git"     revision="refs/tags/2020.08" clone-depth="1" />
     <project path="trusted-firmware-a" name="TF-A/trusted-firmware-a.git" revision="refs/tags/v2.3" remote="tfo" clone-depth="1" />
 
-
-
     <!--    CHANGED    -->
-
-    <!-- Codex ST gits -->
 	<project path="build"            name="litchipi/OPTEE_build" revision="manifest/final_secureuefi" clone-depth="10">
         <linkfile src="stm32mp1.mk"  dest="build/Makefile" />
     </project>
-
-    <!-- Gerrit ST gits -->
 	<project path="u-boot"          name="litchipi/u-boot"        revision="manifest/final_secureuefi" clone-depth="10"/>
 
-    <!-- Github of Timothée Cercueil (litchipi) -->
     <project path="edk2"            name="litchipi/edk2"            revision="manifest/stmm-arm-32b" clone-depth="5" />
     <project path="edk2-platforms"  name="litchipi/edk2-platforms"  revision="manifest/stmm-arm-32b" clone-depth="5" />
 
-    <!-- Fix en attente de Pull Request vers upstream -->
+    <!-- Waiting for PR to be merged in upstream -->
     <project path="optee_client"    name="litchipi/optee_client"    revision="manifest/final_secureuefi" clone-depth="5" />
-
 </manifest>
